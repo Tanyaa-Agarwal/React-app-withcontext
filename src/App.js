@@ -13,19 +13,18 @@ function App() {
     <div>
       
         <Router>
-          <MainNavigation>
-            <Switch>
-              <Route path='/' exact>
-                <AllMeetupsPage />
-              </Route>
-              <Route path='/new-meetup'>
-                <NewMeetupPage />
-              </Route>
-              <Route path='/favourites'>
-                <FavouritesPage></FavouritesPage>
-              </Route>
-            </Switch>
-          </MainNavigation>
+        <MainNavigation />
+        <Switch>
+          <Route path='/' exact>
+            <AllMeetupsPage />
+          </Route>
+          <Route path='/new-meetup'>
+            <NewMeetupPage />
+          </Route>
+          <Route path='/favourites'>
+            <FavouritesPage />
+          </Route>
+        </Switch>
         </Router>
       
       
